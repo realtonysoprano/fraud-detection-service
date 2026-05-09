@@ -1,0 +1,5 @@
+outs:
+- md5: 50c7dc1ac91275a2ade26c682512675e
+  size: 94413
+  hash: md5
+  path: gan_discriminator.pth

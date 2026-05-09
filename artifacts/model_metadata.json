@@ -1,0 +1,7 @@
+{
+  "model_name": "LightGBM Fraud Detector",
+  "version": "1.0.0",
+  "roc_auc": 0.949,
+  "f1_score": 0.504,
+  "features": 111
+}
