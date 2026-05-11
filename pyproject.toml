@@ -1,3 +1,35 @@
+[tool.poetry]
+name = "fraud-detection-service"
+version = "0.1.0"
+description = "Fraud detection service for financial transactions"
+authors = ["Asadulla <asad.mantashev@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+fastapi = "^0.115.0"
+uvicorn = "^0.30.0"
+streamlit = "^1.38.0"
+pandas = "^2.2.2"
+numpy = "^1.26.4"
+lightgbm = "^4.3.0"
+torch = { version = "2.4.1+cpu", source = "pytorch-cpu" }
+scikit-learn = "^1.4.2"
+shap = "^0.46.0"
+joblib = "^1.4.2"
+requests = "^2.32.3"
+python-multipart = "^0.0.9"
+pyarrow = "^17.0.0"
+
+dvc = {extras = ["s3"], version = "^3.67.1"}
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+black = "^24.8.0"
+flake8 = "^7.1.1"
+httpx = "^0.27.0"
+
 [tool.black]
 line-length = 88
 target-version = ["py310"]
@@ -14,3 +46,12 @@ exclude = [
 pythonpath = [
     "."
 ]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "explicit"

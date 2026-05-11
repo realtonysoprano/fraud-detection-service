@@ -1,5 +1,0 @@
-outs:
-- md5: 5f06eda05d768b46a4ac8a3847d0b385
-  size: 70375942
-  hash: md5
-  path: merged_test_df.parquet
