@@ -38,6 +38,8 @@
 - LightGBM
 - PyTorch
 - SHAP
+- CLI
+- poetry
 - Docker / Docker Compose
 - pandas / numpy
 - pytest
